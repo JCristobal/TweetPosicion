@@ -17,9 +17,9 @@
     <link href="estilos/jumbotron-narrow.css" rel="stylesheet"> 
     <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
 
+    <link href="estilos/miestilo.css" rel="stylesheet"> 
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[IE 9]-->
     <script href="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
 
@@ -28,6 +28,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -36,7 +40,7 @@
       <div class="header">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation" ><a href="index.html">Portada</a></li>
             <li role="presentation" class="active"><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
@@ -46,15 +50,27 @@
       <div class="jumbotron">
         <p class="lead">Aplicación ligera para twitear tu posición y usar Google Maps, desarrollada por J. Cristóbal López.</p>
 
-        <p><a class="btn btn-lg btn-success" href="https://github.com/JCristobal" role="button">Visita mi perfil de GitHub</a></p>
+        <p><a class="btn btn-primary" href="https://github.com/JCristobal" role="button"><i class="fa fa-github-square"></i>
+Visita mi perfil de GitHub</a></p>
       </div>
+
+
+
+      <ul class="nav nav-justified" id="centrado">   
+          <li> <p><i class="fa fa-html5 fa-2x"></i></p><p> <i class="fa fa-css3 fa-2x"></i> </p></li>
+          <li><a href="http://getbootstrap.com/">Bootstrap</a> y <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></li>
+          <li> 
+            <a href="https://www.google.es/maps"> <img src="http://i.stack.imgur.com/XtpTm.png" alt="Google Maps" height="30%" width="30%" > </a> 
+            <a href="https://twitter.com/"> <img src="https://g.twimg.com/Twitter_logo_blue.png" alt="Twitter" height="30%" width="30%" > </a> 
+          </li> 
+      </ul> 
 
 
       <footer class="footer">
         <p> JCristobal</p>
       </footer>
 
-    </div> <!-- /container -->
+    </div> 
 
 
   </body>

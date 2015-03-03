@@ -17,6 +17,7 @@
     <link href="estilos/jumbotron-narrow.css" rel="stylesheet"> 
     <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
 
+    <link href="estilos/miestilo.css" rel="stylesheet"> 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,15 +32,9 @@
 
 
 
-    <style type="text/css">
-        html { height: 100% }
-        body { height: 100%; margin: 0; padding: 0 }
-        #map_canvas { height: 100% }
-    </style>
-
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCnWLSJ_mkOwQht4Z6_cVHWgO86xgzS30Q&sensor=true">
-    </script>
+      <script
+          src="http://maps.googleapis.com/maps/api/js">
+      </script>
     
 
       <script type="text/javascript">
@@ -127,59 +122,29 @@
       <div class="header">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Portada</a></li>
             <li role="presentation"><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">TweetPosicion</h3>
       </div>
 
-      <div class="jumbotron" id="map_canvas" style="width:100%; height:100%">
-        <h1>Jumbotron heading</h1>
-        
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <div class="jumbotron" id="map_canvas" >      </div>
 
-      </div>
+    <section id="centrado">
+        <p> Te encuentras a una latitud de <a id="demo"></a> y una longitud de  <a id="demo2"></a> </p>
 
-<p><a class="btn btn-lg btn-success" href="#" role="button">twitea</a></p>
-
-    <p> Te encuentras a una latitud de <a id="demo"></a> y una longitud de  <a id="demo2"></a> </p>
-
-    <script>
-      document.write("<a id=\"menu\" href=\"https://twitter.com/share\" data-size=\"large\" class=\"twitter-share-button\" data-text=\"Me encuentro en la latitud: "+devuelve_lat()+" y longitud: "+devuelve_long()+" twiteando desde la aplicación TweetPosicion \" >Tweetea tu posicion</a>");
-    </script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <div class="row marketing">
-
-
-        <div class="col-lg-6">
-          <h4>Subheading1</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading2</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading3</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading4</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading5</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading6</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+        <script>
+          document.write("<a id=\"menu\" href=\"https://twitter.com/share\" data-size=\"large\" class=\"twitter-share-button\" data-text=\"Me encuentro en la latitud: "+devuelve_lat()+" y longitud: "+devuelve_long()+" twiteando desde la aplicación TweetPosicion \" >Tweetea tu posicion</a>");
+        </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </section>
 
       <footer class="footer">
         <p> JCristobal</p>
       </footer>
 
-    </div> <!-- /container -->
+    </div> 
 
 
   </body>
