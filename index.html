@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="twpos.jpeg">
 
     <title>TweetPosicion</title>
 
@@ -45,8 +45,13 @@
           var mapOptions = {center: new google.maps.LatLng(37.1904066,-3.620416), zoom: 19, disableDefaultUI: true};
           var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
-          // Geolocalización HTML5
-          if(navigator.geolocation) {
+
+            if(!navigator.geolocation) { // Navegador no soporta geolocalización              
+              handleNoGeolocation(false);
+            }
+
+
+          // Geolocalización HTML5          
             navigator.geolocation.getCurrentPosition(function(position) {
 
             latitud = position.coords.latitude;
@@ -75,11 +80,7 @@
 
             }, function() { handleNoGeolocation(true);
             });
-          } 
-            else {
-              // Navegador no soporta geolocalización
-              handleNoGeolocation(false);
-            }
+          
 
 
 
@@ -141,7 +142,7 @@
     </section>
 
       <footer class="footer">
-        <p> JCristobal</p>
+        <p id="centrado"> JCristobal</p>
       </footer>
 
     </div> 

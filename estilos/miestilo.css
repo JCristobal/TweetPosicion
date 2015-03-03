@@ -9,3 +9,5 @@ body { height: 100%; margin: 0; padding: 0 }
 #map_canvas { height: 300px }
 
 #centrado {   text-align: center; margin-bottom: 2%}
+
+.container { margin-top: 2% }
