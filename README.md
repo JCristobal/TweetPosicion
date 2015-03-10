@@ -3,12 +3,12 @@ Aplicación web para asociar Twitter con Google Maps
 
 La portada que podrás encontrarte será
 
-![Portada](https://github.com/JCristobal/TweetPosicion/blob/master/imagenes%20de%20muestra/portada.png?raw=true)
+![Portada](http://i.imgur.com/f1CrmFn.png)
 
 
 y al pulsar el botón de Tweet podrás twitear tu posición:
 
-![twitear](https://github.com/JCristobal/TweetPosicion/blob/master/imagenes%20de%20muestra/twitear.png?raw=true)
+![twitear](http://i.imgur.com/pNQA8a8.png)
 
 
 La aplicación móvil se a creado con [PhoneGap](https://build.phonegap.com)
