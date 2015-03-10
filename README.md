@@ -13,9 +13,10 @@ y al pulsar el botón de Tweet podrás twitear tu posición:
 
 La aplicación móvil se a creado con [PhoneGap](https://build.phonegap.com)
 
-![portada de la aplicación móvil](https://github.com/JCristobal/TweetPosicion/blob/master/imagenes%20de%20muestra/portadamovil.png?raw=true)
+Puedes ver la portada ![portada de la aplicación:](http://i.imgur.com/sGedqPe.png)
+([Aquí en grande](http://i.imgur.com/2dBebLX.png))
 
-También puedes ver la sección de [contacto](https://github.com/JCristobal/TweetPosicion/blob/master/imagenes%20de%20muestra/contacto.png?raw=true) y [el tweet que nos da la aplicación](https://github.com/JCristobal/TweetPosicion/blob/master/imagenes%20de%20muestra/twitearmovil.png?raw=true)
+También puedes ver [el tweet que nos da la aplicación](http://i.imgur.com/5Sm4hJs.png). Una vez [tweeteado](http://i.imgur.com/wIfmxfp.png) podremos compartir y ver las ubicaciones que queramos. Lo podemos ver con la [aplicación de Google Maps](http://i.imgur.com/khXyBot.png) o cualquier [navegador](http://i.imgur.com/FUxEueg.png)
 
 
 ***
