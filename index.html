@@ -42,7 +42,7 @@
           var longitud = -3.6248942; 
 
           function initialize() {
-          var mapOptions = {center: new google.maps.LatLng(37.1904066,-3.620416), zoom: 19, disableDefaultUI: true};
+          var mapOptions = {center: new google.maps.LatLng(37.1904066,-3.620416), zoom: 18, disableDefaultUI: true};
           var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
 
@@ -57,8 +57,8 @@
             latitud = position.coords.latitude;
             longitud = position.coords.longitude;
 
-            document.getElementById("demo").innerHTML = latitud;
-            document.getElementById("demo2").innerHTML = longitud;
+            document.getElementById("muestra_lat").innerHTML = latitud;
+            document.getElementById("muestra_long").innerHTML = longitud;
 
             var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
@@ -77,6 +77,22 @@
             });
 
             map.setCenter(myLatlng);
+
+
+
+            // Creamos la imagen que contiene nuestra posición
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+            +latlon+"&zoom=16&size=400x300&sensor=false&markers=color:green|label:X|"+latlon;
+            document.getElementById("imagen_mapa").innerHTML = "<a href='"+img_url+"'> Pulsa para descargar la imagen de tu posición  </a>";
+
+
+            // Creamos el tweet que comparte nuestra ubicación
+            document.getElementById("tweet").innerHTML = "<a id=\"menu\" href=\"https://twitter.com/share\" data-size=\"large\" class=\"twitter-share-button\" data-text=\"Me encuentro en la latitud: "+ latitud +" y longitud: "+ longitud +" twiteando desde la aplicación TweetPosicion \" >Tweetea tu posicion</a>";
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
+
 
             }, function() { handleNoGeolocation(true);
             });
@@ -109,10 +125,23 @@
               return  longitud;
           }
     
+
+
+
+
           google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
       </script>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
+        <script type="text/javascript">
+            $("#recarga").dblclick(function () {
+            location.reload();
+            }); 
+        </script>
 
 
   </head>
@@ -134,14 +163,21 @@
 
     <div class="jumbotron" id="map_canvas" >      </div>
 
-    <section id="centrado">
-        <p> Te encuentras a una latitud de <a id="demo"></a> y una longitud de  <a id="demo2"></a> </p>
+    <section id="recarga">
+        <p> Te encuentras a una latitud de <a id="muestra_lat"></a> y una longitud de  <a id="muestra_long"></a> </p>
 
-        <script>
+<!-- <script>
           document.write("<a id=\"menu\" href=\"https://twitter.com/share\" data-size=\"large\" class=\"twitter-share-button\" data-text=\"Me encuentro en la latitud: "+devuelve_lat()+" y longitud: "+devuelve_long()+" twiteando desde la aplicación TweetPosicion \" >Tweetea tu posicion</a>");
         </script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+-->
+        <div id="tweet"></div>
+
+        <div id="imagen_mapa"></div>
+
+
     </section>
+
 
       <footer class="footer">
         <p id="centrado"> JCristobal</p>
