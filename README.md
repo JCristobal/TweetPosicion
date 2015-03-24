@@ -1,7 +1,7 @@
 # TweetPosicion
 Aplicación web para asociar Twitter con Google Maps
 
-La portada que podrás encontrarte será
+La portada de la [versión web](http://jcristobal.github.io/TweetPosicion/) será
 
 ![Portada](http://i.imgur.com/f1CrmFn.png)
 
@@ -11,9 +11,10 @@ y al pulsar el botón de Tweet podrás twitear tu posición:
 ![twitear](http://i.imgur.com/pNQA8a8.png)
 
 
+
 La aplicación móvil se a creado con [PhoneGap](https://build.phonegap.com)
 
-Puedes ver la portada 
+Puedes ver la portada: 
 
 ![portada de la aplicación:](http://i.imgur.com/sGedqPe.png)
 
