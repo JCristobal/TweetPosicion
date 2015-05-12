@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.jcristobal.learnUSAstates" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TweetPosicion</name>
+    <description>
+        Aplicación para trabajar con Google Maps y compartir tu ubicación por Twitter rápidamente.
+    </description>
+    <author email="tobas92@gmail.com" href="https://github.com/JCristobal">
+        JCristobal
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+
+    <icon src="twpos.png" />
+
+    <preference name="permissions" value="none"/>
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    
+</widget>
