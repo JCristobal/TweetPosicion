@@ -1,6 +1,12 @@
 # TweetPosicion
 Aplicación web para asociar Twitter con Google Maps
 
+***
+
+Puedes descargarte el instalador para tu dispositivo ANDROID [aquí](https://github.com/JCristobal/TweetPosicion/releases/download/TweetPosicion/TweetPosicion.apk).
+
+***
+
 La portada de la [versión web](http://jcristobal.github.io/TweetPosicion/) será
 
 ![Portada](http://i.imgur.com/f1CrmFn.png)
@@ -23,7 +29,7 @@ Puedes ver la portada:
 También puedes ver [el tweet que nos da la aplicación](http://i.imgur.com/5Sm4hJs.png). Una vez [tweeteado](http://i.imgur.com/wIfmxfp.png) podremos compartir y ver las ubicaciones que queramos. Lo podemos ver con la [aplicación de Google Maps](http://i.imgur.com/khXyBot.png) o cualquier [navegador](http://i.imgur.com/FUxEueg.png)
 
 
-Puedes descargarte el .apk [aquí](https://github.com/JCristobal/TweetPosicion/releases/download/TweetPosicion/TweetPosicion.apk) para instalarlo en tu dispositivo Android.
+
 
 
 ***
